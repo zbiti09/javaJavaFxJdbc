@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="106.0" layoutX="104.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/locksmith.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="93.0" layoutY="128.0" text="SIGN IN">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="si_username" layoutX="54.0" layoutY="188.0" prefHeight="25.0" prefWidth="191.0" promptText="Username" />
+                  <TextField fx:id="si_password" layoutX="54.0" layoutY="232.0" prefHeight="25.0" prefWidth="191.0" promptText="Password" />
+                  <Button fx:id="logIn_button" layoutX="56.0" layoutY="331.0" mnemonicParsing="false" onAction="#login" prefHeight="33.0" prefWidth="191.0" style="-fx-background-color: #FFFF00; -fx-cursor: hand;" text="Log in">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_form" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="106.0" layoutX="104.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/add-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="93.0" layoutY="128.0" text="SIGN IN">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_address" layoutX="54.0" layoutY="188.0" prefHeight="25.0" prefWidth="191.0" promptText="Email Address" />
+                  <TextField fx:id="su_username" layoutX="54.0" layoutY="232.0" prefHeight="25.0" prefWidth="191.0" promptText="Username" />
+                  <Button fx:id="su_signUpButton" layoutX="56.0" layoutY="331.0" mnemonicParsing="false" onAction="#signup" prefHeight="33.0" prefWidth="191.0" style="-fx-background-color: #FFFF00; -fx-cursor: hand;" text="Sign Up">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="su_password" layoutX="56.0" layoutY="272.0" prefHeight="25.0" prefWidth="191.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sub_form" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FFFF00;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/customer.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="edit_label" layoutX="77.0" layoutY="277.0" text="Create Acount">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sub_Sign_button" layoutX="82.0" layoutY="338.0" mnemonicParsing="false" onAction="#signupSlider" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Sign Up">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sub_login_button" layoutX="92.0" layoutY="348.0" mnemonicParsing="false" onAction="#liginSlider" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: #FFFFFF; -fx-cursor: hand;" text="Sign In" visible="false">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
